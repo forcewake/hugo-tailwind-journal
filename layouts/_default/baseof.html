@@ -74,11 +74,8 @@
         <!-- The content block. -->
         {{ block "content" . }}{{ end }}
 
-        <footer>
-            <p>
-                &copy; {{ now.Format "2006"}}. Proudly made with 💕 with <a href="https://gohugo.io/" target="_blank">Hugo</a> and <a href="https://tailwindcss.com/" target="_blank">TailwindCSS</a>.
-            </p>
-        </footer>
+        <!-- The footer block. -->
+        {{ partialCached "footer.html" . }}
     </div>
 
     {{ template "_internal/google_analytics.html" . }}
