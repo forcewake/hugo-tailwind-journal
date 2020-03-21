@@ -1,7 +1,5 @@
-{{ with site.Params.footer }}
-  <footer>
-    <p>
-      {{ safeHTML . }}
-    </p>
-  </footer>
-{{ end }}
+<div class="footer wrapper">
+	<nav class="nav">
+		<div>{{ with .Site.Copyright }} {{ . }} | {{ end }} <a href="https://github.com/forcewake/hugo-tailwind-journal">TailwindCSS Journal</a> | Built with <a href="https://gohugo.io">Hugo</a></div>
+	</nav>
+</div>
