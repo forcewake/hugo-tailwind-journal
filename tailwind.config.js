@@ -5,7 +5,7 @@ module.exports = {
         'l-24': '0 0 6rem'
       },
       fontFamily: {
-        serif: ['Arvo'],
+        serif: ['Noto Serif'],
         mono: ['Source Code Pro']
       },
       padding: {
